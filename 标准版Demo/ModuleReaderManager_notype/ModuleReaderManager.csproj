@@ -1,0 +1,466 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2A9020E-6A7A-4303-A3AF-B98EB3612D49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModuleReaderManager</RootNamespace>
+    <AssemblyName>ModuleReaderManager</AssemblyName>
+    <ApplicationIcon>module.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <SignManifests>false</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FileComponent">
+      <HintPath>..\..\..\DLL\20220606\FileComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutFrm.Designer.cs">
+      <DependentUpon>AboutFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="applib\AntArea.cs" />
+    <Compile Include="applib\Sound.cs" />
+    <Compile Include="Comm.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="CountTagsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountTagsFrm.Designer.cs">
+      <DependentUpon>CountTagsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomCmdFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomCmdFrm.Designer.cs">
+      <DependentUpon>CustomCmdFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_anterea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_anterea.Designer.cs">
+      <DependentUpon>Form_anterea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Ants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Ants.Designer.cs">
+      <DependentUpon>Form_Ants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_box.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_box.Designer.cs">
+      <DependentUpon>Form_box.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_boxAllTags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BoxAllTags.Designer.cs">
+      <DependentUpon>Form_boxAllTags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_boxAllTagsV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_boxAllTagsV2.Designer.cs">
+      <DependentUpon>Form_boxAllTagsV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_box_html.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_box_html.Designer.cs">
+      <DependentUpon>Form_box_html.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_chipupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_chipupdate.Designer.cs">
+      <DependentUpon>Form_chipupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_e710init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_e710init.Designer.cs">
+      <DependentUpon>Form_e710init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_initcard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_initcard.designer.cs">
+      <DependentUpon>Form_initcard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LabelInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LabelInfo.Designer.cs">
+      <DependentUpon>Form_LabelInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_lbt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_lbt.Designer.cs">
+      <DependentUpon>Form_lbt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_mulselect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_mulselect.Designer.cs">
+      <DependentUpon>Form_mulselect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_onekey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_onekey.Designer.cs">
+      <DependentUpon>Form_onekey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_print.Designer.cs">
+      <DependentUpon>Form_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_statistics.Designer.cs">
+      <DependentUpon>Form_statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_tagtemperled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_tagtemperled.Designer.cs">
+      <DependentUpon>Form_tagtemperled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm16AntSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm16AntSet.Designer.cs">
+      <DependentUpon>Frm16AntSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMsgDebug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMsgDebug.Designer.cs">
+      <DependentUpon>FrmMsgDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPsam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPsam.Designer.cs">
+      <DependentUpon>FrmPsam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FtpHelper.cs" />
+    <Compile Include="gen2opForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gen2opForm2.Designer.cs">
+      <DependentUpon>gen2opForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryParasform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryParasform.Designer.cs">
+      <DependentUpon>InventoryParasform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iso186bopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iso186bopForm.Designer.cs">
+      <DependentUpon>Iso186bopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewHelper.cs" />
+    <Compile Include="logFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logFrm.Designer.cs">
+      <DependentUpon>logFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleSaveParamsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleSaveParamsFrm.Designer.cs">
+      <DependentUpon>ModuleSaveParamsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleSaveParamsFrm_8or16ants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleSaveParamsFrm_8or16ants.Designer.cs">
+      <DependentUpon>ModuleSaveParamsFrm_8or16ants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MulperlockFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MulperlockFrm.Designer.cs">
+      <DependentUpon>MulperlockFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiBankWriteFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiBankWriteFrm.Designer.cs">
+      <DependentUpon>MultiBankWriteFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountTagsFrm.resx">
+      <DependentUpon>CountTagsFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomCmdFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomCmdFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_anterea.resx">
+      <DependentUpon>Form_anterea.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Ants.resx">
+      <DependentUpon>Form_Ants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_box.resx">
+      <DependentUpon>Form_box.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BoxAllTags.resx">
+      <DependentUpon>Form_boxAllTags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_boxAllTagsV2.resx">
+      <DependentUpon>Form_boxAllTagsV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_box_html.resx">
+      <DependentUpon>Form_box_html.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_chipupdate.resx">
+      <DependentUpon>Form_chipupdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_e710init.resx">
+      <DependentUpon>Form_e710init.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_initcard.resx">
+      <DependentUpon>Form_initcard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LabelInfo.resx">
+      <DependentUpon>Form_LabelInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_lbt.resx">
+      <DependentUpon>Form_lbt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_mulselect.resx">
+      <DependentUpon>Form_mulselect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_onekey.resx">
+      <DependentUpon>Form_onekey.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_print.resx">
+      <DependentUpon>Form_print.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_statistics.resx">
+      <DependentUpon>Form_statistics.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_tagtemperled.resx">
+      <DependentUpon>Form_tagtemperled.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm16AntSet.resx">
+      <DependentUpon>Frm16AntSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMsgDebug.resx">
+      <DependentUpon>FrmMsgDebug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPsam.resx">
+      <DependentUpon>FrmPsam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gen2opForm2.resx">
+      <DependentUpon>gen2opForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryParasform.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InventoryParasform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iso186bopForm.resx">
+      <DependentUpon>Iso186bopForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logFrm.resx">
+      <DependentUpon>logFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleSaveParamsFrm.resx">
+      <DependentUpon>ModuleSaveParamsFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleSaveParamsFrm_8or16ants.resx">
+      <DependentUpon>ModuleSaveParamsFrm_8or16ants.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MulperlockFrm.resx">
+      <DependentUpon>MulperlockFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiBankWriteFrm.resx">
+      <DependentUpon>MultiBankWriteFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="readerParaform.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>readerParaform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gen2opForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>gen2opForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regulatoryFrm.resx">
+      <DependentUpon>regulatoryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatefrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>updatefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="readerParaform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readerParaform.Designer.cs">
+      <DependentUpon>readerParaform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gen2opForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gen2opForm.Designer.cs">
+      <DependentUpon>gen2opForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regulatoryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regulatoryFrm.Designer.cs">
+      <DependentUpon>regulatoryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatefrm.Designer.cs">
+      <DependentUpon>updatefrm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1111.ico" />
+    <Content Include="module.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\SVN ModuleAPI_C#\trunk\ModuleAPI\ModuleAPI.csproj">
+      <Project>{ebf4c806-1fff-4e77-b439-10ce9058386e}</Project>
+      <Name>ModuleAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

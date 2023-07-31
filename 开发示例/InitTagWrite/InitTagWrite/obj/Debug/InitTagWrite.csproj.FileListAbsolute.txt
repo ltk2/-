@@ -1,0 +1,9 @@
+D:\ModuleSDK_20201120\Sample_Code\C#\InitTagWrite\InitTagWrite\bin\Debug\InitTagWrite.exe
+D:\ModuleSDK_20201120\Sample_Code\C#\InitTagWrite\InitTagWrite\bin\Debug\InitTagWrite.pdb
+D:\ModuleSDK_20201120\Sample_Code\C#\InitTagWrite\InitTagWrite\bin\Debug\ModuleAPI.dll
+D:\ModuleSDK_20201120\Sample_Code\C#\InitTagWrite\InitTagWrite\obj\Debug\ResolveAssemblyReference.cache
+D:\ModuleSDK_20201120\Sample_Code\C#\InitTagWrite\InitTagWrite\obj\Debug\InitTagWrite.Form1.resources
+D:\ModuleSDK_20201120\Sample_Code\C#\InitTagWrite\InitTagWrite\obj\Debug\InitTagWrite.Properties.Resources.resources
+D:\ModuleSDK_20201120\Sample_Code\C#\InitTagWrite\InitTagWrite\obj\Debug\InitTagWrite.csproj.GenerateResource.Cache
+D:\ModuleSDK_20201120\Sample_Code\C#\InitTagWrite\InitTagWrite\obj\Debug\InitTagWrite.exe
+D:\ModuleSDK_20201120\Sample_Code\C#\InitTagWrite\InitTagWrite\obj\Debug\InitTagWrite.pdb

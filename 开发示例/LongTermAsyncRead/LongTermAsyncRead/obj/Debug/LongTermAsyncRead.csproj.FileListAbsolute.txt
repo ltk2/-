@@ -1,0 +1,11 @@
+D:\ModuleSDK_20201120\Sample_Code\C#\LongTermAsyncRead\LongTermAsyncRead\bin\Debug\LongTermAsyncRead.exe
+D:\ModuleSDK_20201120\Sample_Code\C#\LongTermAsyncRead\LongTermAsyncRead\bin\Debug\LongTermAsyncRead.pdb
+D:\ModuleSDK_20201120\Sample_Code\C#\LongTermAsyncRead\LongTermAsyncRead\bin\Debug\ModuleAPI.dll
+D:\ModuleSDK_20201120\Sample_Code\C#\LongTermAsyncRead\LongTermAsyncRead\obj\Debug\LongTermAsyncRead.csprojAssemblyReference.cache
+D:\ModuleSDK_20201120\Sample_Code\C#\LongTermAsyncRead\LongTermAsyncRead\obj\Debug\LongTermAsyncRead.Form1.resources
+D:\ModuleSDK_20201120\Sample_Code\C#\LongTermAsyncRead\LongTermAsyncRead\obj\Debug\LongTermAsyncRead.Properties.Resources.resources
+D:\ModuleSDK_20201120\Sample_Code\C#\LongTermAsyncRead\LongTermAsyncRead\obj\Debug\LongTermAsyncRead.csproj.GenerateResource.cache
+D:\ModuleSDK_20201120\Sample_Code\C#\LongTermAsyncRead\LongTermAsyncRead\obj\Debug\LongTermAsyncRead.csproj.CoreCompileInputs.cache
+D:\ModuleSDK_20201120\Sample_Code\C#\LongTermAsyncRead\LongTermAsyncRead\obj\Debug\LongTermAsyncRead.csproj.CopyComplete
+D:\ModuleSDK_20201120\Sample_Code\C#\LongTermAsyncRead\LongTermAsyncRead\obj\Debug\LongTermAsyncRead.exe
+D:\ModuleSDK_20201120\Sample_Code\C#\LongTermAsyncRead\LongTermAsyncRead\obj\Debug\LongTermAsyncRead.pdb
